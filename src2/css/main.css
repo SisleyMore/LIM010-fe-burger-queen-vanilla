@@ -148,7 +148,10 @@ body {
   left: 0;
   right: 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b51e8f85b418cface08eee7299f0edf5381670aa
 .modalcontenido {
   margin: 20px;
 }
@@ -177,15 +180,15 @@ body {
 
 .ventana {
   background: turquoise;
-  width: 30%;
+  width: 50%;
   color: beige;
   font-size: 18px;
   text-align: center;
   padding: 33px;
-  min-height: 250px;
+  min-height: 80px;
   border-radius: 22px;
-
 }
+
 @media (max-width: 600px) {
 
   body,

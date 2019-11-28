@@ -66,7 +66,7 @@ const btnDeSabores = eleHTML.querySelectorAll(`[name='sabores']`);
       <p class="textModal">¿Desea agregar un adicional por $1?</p>
       <form>
       <label><input type="checkbox" id="cbox1" value="huevo"> huevo </label><br>
-      <input type="checkbox" id="cbox2" value="queso"> <label for="cbox2"> queso</label>
+      <input type="checkbox" id="cbox2" value="queso"> <label for="cbox2"> queso</label><br><label><input type="checkbox" id="cbox3" value="huevo y queso"> huevo y queso </label>
       <button type="submit" id="agregar-adicional">ok</button>
       </form>
       </div> `
@@ -77,13 +77,15 @@ const btnDeSabores = eleHTML.querySelectorAll(`[name='sabores']`);
       })
 
       const agregarAdicional = divModal.querySelector('#agregar-adicional');
+      const adicional1 = divModal.querySelector('#cbox1');
+      const adicional2 = divModal.querySelector('#cbox2');
+      const adicional3 = divModal.querySelector('#cbox3');
       agregarAdicional.addEventListener('click', () =>{
-        const adicional1 = divModal.querySelector('#cbox1').checked;
-        const adicional2 = divModal.querySelector('#cbox2').checked;
+      if(adicional3.checked == true ){console.log(obj.precio+=2)}else if(adicional1.checked == true || adicional2.checked == true ){ console.log(obj.precio+=1)}
+      
 
       })
    
-      console.log(obj);
   });
 });
 }

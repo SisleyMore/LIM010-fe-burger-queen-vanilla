@@ -33,12 +33,10 @@ export default () => {
       copiaObj.cantidad = 1;
       console.log(doc.data());
       if (copiaObj.name === "Hamburguesa simple" || copiaObj.name === "Hamburguesa doble") {
-        // alert('jnhn');
         const sabores = doc.data().sabores;
         pintarSabores(sabores, divSabores);
         let modal = divElemt.querySelector('#modal');   
         añadirPropiedad(divSabores,copiaObj, modal);
-
 
        }
 

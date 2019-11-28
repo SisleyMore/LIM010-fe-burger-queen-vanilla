@@ -13,7 +13,7 @@ export const crearObjeto = (input, total) => {
   objOrdenes.cliente = input.value;
   objOrdenes.productos = arrPedidos;
   objOrdenes.total = total;
-  console.log(objOrdenes);
+  objOrdenes.fecha = new Date();
   guardarData('Ordenes', objOrdenes)
   .then(() => {
   arrPedidos=[];
